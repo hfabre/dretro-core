@@ -15,7 +15,7 @@ Build the core using dub:
 dub
 ```
 
-Run [retroach](https://www.retroarch.com/) (of course if should run with any [https://docs.libretro.com/development/frontends/](libretro front), but that's the one i'am using):
+Run [retroach](https://www.retroarch.com/), of course it should run with any [libretro front](https://docs.libretro.com/development/frontends/), but that's the one i'am using:
 
 ```sh
 path/to/retroarch -v -L path/to/this/repo/lib/libdretro-core.{dylib,so}
