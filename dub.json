@@ -1,0 +1,12 @@
+{
+	"name": "dretro-core",
+	"authors": [
+		"Hugo Fabre"
+	],
+	"copyright": "Copyright © 2022, Hugo Fabre",
+	"description": "Minimal libretro core implementation",
+	"license": "mit",
+	"targetName": "dretro-core",
+    "targetPath": "lib",
+    "targetType": "dynamicLibrary"
+}
