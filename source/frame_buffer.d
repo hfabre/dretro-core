@@ -2,6 +2,7 @@ module frame_buffer;
 
 import core.stdc.stdlib;
 import color;
+import rectangle;
 
 class FrameBuffer {
    uint bpp = 4;
@@ -13,8 +14,7 @@ class FrameBuffer {
    ubyte *c_buf;
    Color[][] buf;
 
-   this(uint width, uint height)
-   {
+   this(uint width, uint height) {
       this.width = width;
       this.height = height;
       this.pixels = this.width * this.height;
@@ -23,8 +23,7 @@ class FrameBuffer {
       this.buf = new Color[][](this.height, this.width);
    }
 
-   ~this()
-   {
+   ~this() {
       free(c_buf);
    }
 
@@ -39,6 +38,10 @@ class FrameBuffer {
             this.buf[i][j] = color;
          }
       }
+   }
+
+   void draw_rect(Rectangle rect, Color color) {
+      this.draw_rect(rect.x, rect.y, rect.w, rect.h, color);
    }
 
    void redraw() {

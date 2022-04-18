@@ -27,9 +27,6 @@ path/to/retroarch -v -L path/to/this/repo/lib/libdretro-core.{dylib,so}
 
 - Translating [libretro.h](https://raw.githubusercontent.com/libretro/libretro-common/master/include/libretro.h) to dlang using [dstep](https://code.dlang.org/packages/dstep) and fixing manually some errors (trying to compile the `libretro.d` file)
 - Print a rectangle (Handle the frame buffer and draw a AA rectangle to it)
-
-## Next steps
-
 - Handle input
 - Minimal game scene (moving square)
 
